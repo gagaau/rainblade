@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer ficar triste?</title>
+    <link rel="stylesheet" href="futuro.css">
+</head>
+<body>
+    <div class="enfeitado">
+        <h2>Deixe suas lágrimas sumirem na chuva... e relaxe também.</h2>
+        <div class="controle">
+            <button id="play">Clique aqui.</button>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        </div>
+    </div>
+    <script>
+        let play = document.getElementById("play");
+        function playMusic() {
+            let audio = new Audio("rain-sad.mp3");
+                audio.play()
+        }
+        play.addEventListener("click", playMusic)
+    </script>
+</body>
+</html>
